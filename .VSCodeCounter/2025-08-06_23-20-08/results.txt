@@ -1,0 +1,82 @@
+Date : 2025-08-06 23:20:08
+Directory : c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src
+Total : 42 files,  2720 codes, 88 comments, 228 blanks, all 3036 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| JavaScript JSX |         25 |      2,475 |         87 |        204 |      2,766 |
+| XML            |         14 |        171 |          0 |         14 |        185 |
+| PostCSS        |          1 |         42 |          1 |          8 |         51 |
+| JavaScript     |          2 |         32 |          0 |          2 |         34 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                        | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                           |         42 |      2,720 |         88 |        228 |      3,036 |
+| . (Files)                                                                                   |          4 |         98 |          1 |         17 |        116 |
+| assets                                                                                      |         14 |        171 |          0 |         14 |        185 |
+| components                                                                                  |         17 |      2,131 |         85 |        161 |      2,377 |
+| components (Files)                                                                          |          1 |         10 |          0 |          5 |         15 |
+| components\About                                                                            |          4 |        502 |          9 |         31 |        542 |
+| components\CustomCursor                                                                     |          1 |         77 |          2 |         12 |         91 |
+| components\Email                                                                            |          1 |         82 |          3 |          8 |         93 |
+| components\Footer                                                                           |          1 |         65 |          6 |          6 |         77 |
+| components\Hero                                                                             |          7 |      1,062 |         52 |         80 |      1,194 |
+| components\Navbar                                                                           |          1 |         84 |          8 |         12 |        104 |
+| components\Services                                                                         |          1 |        249 |          5 |          7 |        261 |
+| pages                                                                                       |          6 |        288 |          2 |         35 |        325 |
+| utility                                                                                     |          1 |         32 |          0 |          1 |         33 |
++---------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                                    | language       | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\App.jsx                                  | JavaScript JSX |         47 |          0 |          6 |         53 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\assets\Logo_dark.svg                     | XML            |          5 |          0 |          1 |          6 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\assets\aboutus_1.svg                     | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\assets\aboutus_2.svg                     | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\assets\card_img.svg                      | XML            |         21 |          0 |          1 |         22 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\assets\card_img_2.svg                    | XML            |         19 |          0 |          1 |         20 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\assets\female_team-2.svg                 | XML            |         32 |          0 |          1 |         33 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\assets\female_team.svg                   | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\assets\footer_bg.svg                     | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\assets\hero2_img.svg                     | XML            |         13 |          0 |          1 |         14 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\assets\icon_dark 1.svg                   | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\assets\icon_light 1.svg                  | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\assets\image 7.svg                       | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\assets\male_team-2.svg                   | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\assets\male_team.svg                     | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\components\About\AboutUs.jsx             | JavaScript JSX |        164 |          4 |          8 |        176 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\components\About\FAQSection.jsx          | JavaScript JSX |        128 |          2 |         10 |        140 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\components\About\OurTeamPage.jsx         | JavaScript JSX |        122 |          2 |          7 |        131 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\components\About\OurValues.jsx           | JavaScript JSX |         88 |          1 |          6 |         95 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\components\CustomCursor\CustomCursor.jsx | JavaScript JSX |         77 |          2 |         12 |         91 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\components\Email\Email.jsx               | JavaScript JSX |         82 |          3 |          8 |         93 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\components\Footer\Footer2.jsx            | JavaScript JSX |         65 |          6 |          6 |         77 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\components\Hero\Hero1.jsx                | JavaScript JSX |         72 |          4 |          2 |         78 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\components\Hero\Hero2.jsx                | JavaScript JSX |        207 |          7 |         16 |        230 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\components\Hero\Hero3.jsx                | JavaScript JSX |        135 |          5 |          8 |        148 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\components\Hero\MeetLegalExperts.jsx     | JavaScript JSX |        200 |         13 |         24 |        237 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\components\Hero\Testimonial.jsx          | JavaScript JSX |        251 |         16 |         17 |        284 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\components\Hero\VideoDesign.jsx          | JavaScript JSX |         88 |          2 |          6 |         96 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\components\Hero\WhatMakesUsStandOut.jsx  | JavaScript JSX |        109 |          5 |          7 |        121 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\components\Navbar\Navbar.jsx             | JavaScript JSX |         84 |          8 |         12 |        104 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\components\ScrollToTop.jsx               | JavaScript JSX |         10 |          0 |          5 |         15 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\components\Services\ServicesPage.jsx     | JavaScript JSX |        249 |          5 |          7 |        261 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\constants.js                             | JavaScript     |          0 |          0 |          1 |          1 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\index.css                                | PostCSS        |         42 |          1 |          8 |         51 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\main.jsx                                 | JavaScript JSX |          9 |          0 |          2 |         11 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\pages\About.jsx                          | JavaScript JSX |         12 |          0 |          3 |         15 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\pages\Contact.jsx                        | JavaScript JSX |         10 |          0 |          3 |         13 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\pages\Home.jsx                           | JavaScript JSX |         16 |          0 |          2 |         18 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\pages\PrivacyPolicy.jsx                  | JavaScript JSX |        230 |          2 |         21 |        253 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\pages\Services.jsx                       | JavaScript JSX |         10 |          0 |          3 |         13 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\pages\TermsConditions.jsx                | JavaScript JSX |         10 |          0 |          3 |         13 |
+| c:\Users\ujjwa\OneDrive\Desktop\client\lawfirm\src\utility\animation.js                     | JavaScript     |         32 |          0 |          1 |         33 |
+| Total                                                                                       |                |      2,720 |         88 |        228 |      3,036 |
++---------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+

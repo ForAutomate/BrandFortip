@@ -172,7 +172,7 @@ const ServicesPage = () => {
       </motion.div>
 
       {/* Services Sections */}
-      {services.map((service) => (
+      {services.map((service, index) => (
         <motion.div
           key={service.id}
           variants={sectionVariants}

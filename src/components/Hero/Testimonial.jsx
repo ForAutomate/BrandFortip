@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Star, Quote } from 'lucide-react';
 import { motion } from "framer-motion";
+import powerappsLogo from '../../assets/powerapps_logo.svg';
+import copilotLogo from '../../assets/copilot_logo.svg';
+import automateLogo from '../../assets/automate_logo.svg';
 
 
 const Testimonial = () => {
@@ -12,7 +15,7 @@ const Testimonial = () => {
       name: "Sarah Chen",
       role: "Product Manager",
       company: "TechFlow Inc.",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
+      avatar: "https://images.unsplash.com/photo-1494790108375-2616b612b786?w=150&h=150&fit=crop&crop=face",
       rating: 5,
       text: "This solution transformed our workflow completely. Amazing results!",
       color: "from-purple-500 to-pink-500"
@@ -212,9 +215,9 @@ const Testimonial = () => {
       <div className="text-center mt-16 px-6">
         <div className="inline-flex items-center gap-2 bg-white rounded-full px-6 py-3 shadow-lg">
           <div className="flex -space-x-2">
-            <img src="src\assets\powerapps_logo.svg" alt="PowerApps Logo" className="w-8 h-8 rounded-full object-cover bg-white" />
-            <img src="src\assets\copilot_logo.svg" alt="Copilot Logo" className="w-8 h-8 rounded-full object-cover bg-white" />
-            <img src="src\assets\automate_logo.svg" alt="Automate Logo" className="w-8 h-8 rounded-full object-cover bg-white" />
+            <img src={powerappsLogo} alt="PowerApps Logo" className="w-8 h-8 rounded-full object-cover bg-white" />
+            <img src={copilotLogo} alt="Copilot Logo" className="w-8 h-8 rounded-full object-cover bg-white" />
+            <img src={automateLogo} alt="Automate Logo" className="w-8 h-8 rounded-full object-cover bg-white" />
           </div>
           <span className="text-gray-700 font-medium ml-2" >
             5+ Projects Delivered

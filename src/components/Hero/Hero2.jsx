@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Award, Users, Heart } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import heroLawyer from '../../assets/hero_lawyer.png';
 
 const Hero2 = () => {
   const navigate = useNavigate();
@@ -128,7 +129,7 @@ const Hero2 = () => {
             <div className="relative flex items-center justify-center">
               <div className="relative w-full max-w-md xl:max-w-lg xl:-ml-64">
               <img 
-                src="src\assets\hero_lawyer.png"
+                src={heroLawyer}
                 alt="Professional Lawyer"
                 className="w-full rounded-2xl shadow-2xl mask-gradient"
               />

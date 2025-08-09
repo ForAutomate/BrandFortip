@@ -177,11 +177,11 @@ const Testimonial = () => {
           ))}
           {/* Duplicate for seamless loop */}
           {firstRow.map((testimonial, index) => (
-            <TestimonialCard key={`first-dup-${testimonial.id}`} testimonial={testimonial} index={index} />
+            <TestimonialCard key={`first-dup-1-${testimonial.id}`} testimonial={testimonial} index={index} />
           ))}
           {/* next Duplicate for seamless loop */}
           {firstRow.map((testimonial, index) => (
-            <TestimonialCard key={`first-dup-${testimonial.id}`} testimonial={testimonial} index={index} />
+            <TestimonialCard key={`first-dup-2-${testimonial.id}`} testimonial={testimonial} index={index} />
           ))}
         </div>
       </div>
@@ -195,11 +195,11 @@ const Testimonial = () => {
           ))}
           {/* Duplicate for seamless loop */}
           {secondRow.map((testimonial, index) => (
-            <TestimonialCard key={`second-dup-${testimonial.id}`} testimonial={testimonial} index={index} />
+            <TestimonialCard key={`second-dup-1-${testimonial.id}`} testimonial={testimonial} index={index} />
           ))}
           {/* Next Duplicate for seamless loop */}
           {secondRow.map((testimonial, index) => (
-            <TestimonialCard key={`second-dup-${testimonial.id}`} testimonial={testimonial} index={index} />
+            <TestimonialCard key={`second-dup-2-${testimonial.id}`} testimonial={testimonial} index={index} />
           ))}
         </div>
       </div>
@@ -212,9 +212,9 @@ const Testimonial = () => {
       <div className="text-center mt-16 px-6">
         <div className="inline-flex items-center gap-2 bg-white rounded-full px-6 py-3 shadow-lg">
           <div className="flex -space-x-2">
-            <img src="src\assets\powerapps_logo.svg" alt="" className="w-8 h-8 rounded-full object-cover bg-white" />
-            <img src="src\assets\copilot_logo.svg" alt="" className="w-8 h-8 rounded-full object-cover bg-white" />
-            <img src="src\assets\automate_logo.svg" alt="" className="w-8 h-8 rounded-full object-cover bg-white" />
+            <img src="src\assets\powerapps_logo.svg" alt="PowerApps Logo" className="w-8 h-8 rounded-full object-cover bg-white" />
+            <img src="src\assets\copilot_logo.svg" alt="Copilot Logo" className="w-8 h-8 rounded-full object-cover bg-white" />
+            <img src="src\assets\automate_logo.svg" alt="Automate Logo" className="w-8 h-8 rounded-full object-cover bg-white" />
           </div>
           <span className="text-gray-700 font-medium ml-2" >
             5+ Projects Delivered

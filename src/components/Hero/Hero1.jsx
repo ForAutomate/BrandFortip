@@ -4,6 +4,7 @@ import { FaArrowDown } from "react-icons/fa6"
 import { ArrowUpRight } from 'lucide-react';
 import { slideUp } from "../../utility/animation";
 import { useNavigate } from "react-router-dom";
+import ladyJustice from '../../assets/lady_justice.png';
 
 const Hero1 = () => {
   const navigate = useNavigate();
@@ -60,7 +61,7 @@ const Hero1 = () => {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="w-[50%] md:w-[550px] xl:w-[750px] rounded-2xl"
             >
-            <img src="src/assets/lady_justice.png" alt="lady justice" className="w-[100%] xl:ml-auto md:-mr-20 -translate-x-20 mt-4 contrast-150" />
+            <img src={ladyJustice} alt="lady justice" className="w-[100%] xl:ml-auto md:-mr-20 -translate-x-20 mt-4 contrast-150" />
             </motion.div>
           </div>
           {/* Arrow */}

@@ -87,7 +87,7 @@ const Navbar = () => {
   );
 };
 
-const NavLink = ({ children, mobile, to }) => (
+const NavLink = ({ children, mobile, to, setIsOpen }) => (
   <Link
     to={to}
     className={`

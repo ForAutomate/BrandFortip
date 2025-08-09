@@ -2,16 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Lightbulb, Handshake, Users, Scale, TrendingUp, Compass } from 'lucide-react';
 
-// Main App component to contain all other components.
-export default function App() {
-  return (
-    <div className="min-h-screen font-sans bg-[#fcfcfc] text-gray-800">
-      {/* The new "What Makes Us Stand Out" component */}
-      <WhatMakesUsStandOut />
-    </div>
-  );
-}
-
 // "What Makes Us Stand Out" component
 const WhatMakesUsStandOut = () => {
   const features = [

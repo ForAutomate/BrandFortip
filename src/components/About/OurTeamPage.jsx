@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
+import femaleTeam from '../../assets/female_team-2.svg';
+import maleTeam from '../../assets/male_team-2.svg';
 
 const OurTeamPage = () => {
   const teamMembers = [
@@ -8,31 +10,31 @@ const OurTeamPage = () => {
       name: 'Sangeeta Kumari',
       title: 'Owner',
       expertise: 'Strategic Legal Planning, Business Law',
-      image: 'src/assets/female_team-2.svg',
+      image: femaleTeam,
     },
     {
       name: 'Dhruv',
       title: 'Assistant Manager',
       expertise: 'Real Estate Law, Corporate Governance',
-      image: 'src/assets/male_team-2.svg',
+      image: maleTeam,
     },
     {
       name: 'Komal',
       title: 'Team Leader',
       expertise: 'Family Law, Mediation, Family Disputes',
-      image: 'src/assets/female_team-2.svg',
+      image: femaleTeam,
     },
     {
       name: 'Lucky',
       title: 'Senior Associate',
       expertise: 'Litigation, Intellectual Property',
-      image: 'src/assets/male_team-2.svg',
+      image: maleTeam,
     },
     {
       name: 'Sanjana Sharma',
       title: 'Associate',
       expertise: 'Environmental Law, Public Policy',
-      image: 'src/assets/female_team-2.svg',
+      image: femaleTeam,
     },
   ];
 

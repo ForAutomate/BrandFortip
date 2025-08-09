@@ -1,11 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, PenLine, Brush, LockKeyhole, ArrowRight, Globe } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import trademark from '../../assets/trademark_img.jpg'
 import industrial from '../../assets/industrial_img.png'
 import copyright from '../../assets/copyright_img.jpg'
 import geo_img from '../../assets/geographical_img.png'
 import { useNavigate } from 'react-router-dom';
+import legalProtection from '../../assets/legal_protection.png';
+import designInnovation from '../../assets/design_innovation.png';
+import ipSecurity from '../../assets/ip_security.png';
+import heritageImg from '../../assets/heritage_img.png';
 
 const ServicesPage = () => {
   const navigate = useNavigate();
@@ -43,7 +47,7 @@ const ServicesPage = () => {
           text: 'We handle objections from the Registrar or third parties, building a strong case to proceed with registration.'
         },
       ],
-      secondaryImage: "src/assets/legal_protection.png",
+      secondaryImage: legalProtection,
       punchline: "Your legacy is built on trust, and we secure it."
     },
     {
@@ -75,7 +79,7 @@ const ServicesPage = () => {
           text: 'Ensuring your design registrations are renewed in time to maintain their legal protection.'
         },
       ],
-      secondaryImage: "src/assets/design_innovation.png",
+      secondaryImage: designInnovation,
       punchline: "The aesthetic of your innovation deserves our expertise."
     },
     {
@@ -107,7 +111,7 @@ const ServicesPage = () => {
           text: 'Providing expert legal advice on all matters related to copyright law and protection.'
         },
       ],
-      secondaryImage: "src/assets/ip_security.png",
+      secondaryImage: ipSecurity,
       punchline: "Your originality is your power; we're here to defend it."
     },
     {
@@ -139,7 +143,7 @@ const ServicesPage = () => {
           text: 'Ensuring your product continues to meet the criteria required to maintain its Geographical Indication status.'
         },
       ],
-      secondaryImage: "src/assets/heritage_img.png", 
+      secondaryImage: heritageImg, 
       punchline: "The heritage of your product deserves our protection."
     },
   ];
@@ -168,9 +172,9 @@ const ServicesPage = () => {
       </motion.div>
 
       {/* Services Sections */}
-      {services.map((service, index) => (
+      {services.map((service) => (
         <motion.div
-          key={index}
+          key={service.id}
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"

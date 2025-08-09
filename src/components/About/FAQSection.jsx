@@ -86,6 +86,8 @@ const FAQSection = () => {
               <button
                 className="flex justify-between items-center w-full p-6 text-left focus:outline-none"
                 onClick={() => toggleFAQ(index)}
+                aria-expanded={openIndex === index}
+                aria-controls={`faq-content-${faq.id}`}
               >
                 <span className="text-lg font-popsb text-blue-900">{faq.question}</span>
                 <motion.div
@@ -101,6 +103,7 @@ const FAQSection = () => {
               <AnimatePresence>
                 {openIndex === index && (
                   <motion.div
+                    id={`faq-content-${faq.id}`}
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: 'auto' }}
                     exit={{ opacity: 0, height: 0 }}

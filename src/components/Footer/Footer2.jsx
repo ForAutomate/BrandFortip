@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
 const Footer = () => {
   return (
     <footer className="bg-[#bae9ff] text-gray-300 p-6 md:p-8 border-t">

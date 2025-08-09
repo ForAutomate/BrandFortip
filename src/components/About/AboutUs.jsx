@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import OurTeamPage from './OurTeamPage';
 import OurValues from './OurValues';
-import FAQSection from './FAQSection';
+import aboutUs1 from '../../assets/aboutus_1.svg';
+import aboutUs2 from '../../assets/aboutus_2.svg';
+import aboutUsVid from '../../assets/aboutus_vid.mp4';
 
 const AboutUs = () => {
   const fadeIn = (direction, delay) => ({
@@ -61,7 +63,7 @@ const AboutUs = () => {
             className="overflow-hidden"
           >
             <img
-              src="src\assets\aboutus_1.svg"
+              src={aboutUs1}
               alt="Trusted Legal Partners"
               className="w-full p-4 rounded-[50px] h-auto object-cover"
               onError={(e) => { e.target.src = 'https://placehold.co/600x400'; }}
@@ -127,7 +129,7 @@ const AboutUs = () => {
             className="rounded-3xl overflow-hidden"
           >
             <img
-              src="src\assets\aboutus_2.svg"
+              src={aboutUs2}
               alt="Our Dedicated Team"
               className="w-full h-auto object-cover"
               onError={(e) => { e.target.src = 'https://placehold.co/600x400'; }}
@@ -162,7 +164,7 @@ const AboutUs = () => {
           className="grid grid-cols-1 mb-16 p-2"
         >
           <div className="xl:rounded-[50px] rounded-3xl overflow-hidden shadow-xl">
-            <video src="src\assets\aboutus_vid.mp4" autoPlay loop muted className="w-full h-auto object-cover"></video>
+            <video src={aboutUsVid} autoPlay loop muted className="w-full h-auto object-cover"></video>
           </div>
         </motion.div>
       </div>

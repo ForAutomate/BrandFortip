@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, Handshake, Lightbulb, TrendingUp, Users, Scale, Shield, Landmark } from 'lucide-react';
+import { Handshake, Lightbulb, Users, Landmark } from 'lucide-react';
 
 const OurValues = () => {
   const containerVariants = {

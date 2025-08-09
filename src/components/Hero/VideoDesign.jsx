@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from 'lucide-react';
 import { slideUp } from "../../utility/animation";
 import { useNavigate } from "react-router-dom";
+import heroVideo from '../../assets/hero_video.mp4';
 
 const VideoDesign = () => {
   const [isMuted, setIsMuted] = useState(true);
@@ -43,7 +44,7 @@ const VideoDesign = () => {
             >
               <video 
                 ref={videoRef}
-                src="src/assets/hero_video.mp4" 
+                src={heroVideo} 
                 autoPlay 
                 loop 
                 muted={isMuted} 

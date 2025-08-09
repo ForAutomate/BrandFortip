@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
 import ScrollToTop from "./components/ScrollToTop";
+import loaderVideo from './assets/loader.mp4';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -25,10 +26,10 @@ const App = () => {
   if (loading) {
     return (
       <div className="loading-screen bg-black h-screen flex justify-center items-center">
-        <video src="src/assets/loader.mp4" autoPlay loop muted className="w-[200px] h-[200px] object-cover"></video>
+        <video src={loaderVideo} autoPlay loop muted className="w-[200px] h-[200px] object-cover"></video>
       </div>
     );
-  };
+  }
 
   return (
     <Router>

@@ -13,11 +13,11 @@ const Email = () => {
       .then(
         () => {
           console.log("SUCCESS!");
-          alert("Message sent successfully!"); // Using alert for now, consider custom modal
+          // alert("Message sent successfully!"); // Using alert for now, consider custom modal
         },
         (error) => {
           console.log("FAILED...", error.text);
-          alert("Failed to send message. Please try again later."); // Using alert for now
+          // alert("Failed to send message. Please try again later."); // Using alert for now
         }
       );
   };

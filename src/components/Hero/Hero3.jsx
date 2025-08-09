@@ -1,8 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, PenLine, Brush, LockKeyhole, Globe } from 'lucide-react'; 
+import { Award, PenLine, Brush, Globe } from 'lucide-react'; 
 import { ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import trademarkImg from '../../assets/trademark_img.jpg';
+import copyrightImg from '../../assets/copyright_img.jpg';
+import industrialImg from '../../assets/industrial_img.png';
+import geoImg from '../../assets/geographical_img_dark.png';
 
 const Hero3 = () => {
   const navigate = useNavigate();
@@ -14,7 +18,7 @@ const Hero3 = () => {
     coverText: "Safeguarding your brand identity and reputation in the market.",
     description: "We secure and defend your brand identity, ensuring your business name, logo, and slogans are protected from infringement. Our services include comprehensive clearance searches, registration, portfolio management, and aggressive enforcement against unauthorized use to maintain your market distinction.",
     icon: Award, 
-    bgImage: "src/assets/trademark_img.jpg"
+    bgImage: trademarkImg
   },
   {
     id: 2,
@@ -23,7 +27,7 @@ const Hero3 = () => {
     coverText: "Protecting your original creative works and artistic expressions.",
     description: "Our team assists creators and businesses in protecting their original works of authorship, including literary, dramatic, musical, artistic, and architectural creations. We handle copyright registration, licensing agreements, and enforcement actions to prevent unauthorized reproduction or distribution, ensuring your creative rights are secure.",
     icon: PenLine, 
-    bgImage: "src/assets/copyright_img.jpg" 
+    bgImage: copyrightImg
   },
   {
     id: 3,
@@ -32,7 +36,7 @@ const Hero3 = () => {
     coverText: "Securing the unique aesthetic and visual appeal of your products.",
     description: "We specialize in protecting the aesthetic and unique visual features of your products, such as shape, configuration, pattern, or ornamentation. Our services include preparing and filing design patent applications to secure exclusive rights over your industrial creations, giving you a crucial competitive edge in design-driven markets.",
     icon: Brush, 
-    bgImage: "src/assets/industrial_img.png" 
+    bgImage: industrialImg
   },
 {
   id: 5,
@@ -41,7 +45,7 @@ const Hero3 = () => {
   coverText: "Protecting products with a specific geographical origin and quality.",
   description: "We help producers and associations protect products whose quality, reputation, or other characteristics are linked to a specific geographical origin. Our services include advising on registration, managing applications, and enforcing rights to prevent misuse or imitation, thereby preserving the value and authenticity of your traditional products.",
   icon: Globe, 
-  bgImage: "src/assets/geographical_img_dark.png" 
+  bgImage: geoImg
 }
 ];
 

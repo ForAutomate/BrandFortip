@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Award, Users, Heart } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import heroLawyer from '../../assets/hero_lawyer.png';
+import heroLawyer from '../../assets/hero_lawyer.svg';
 
 const Hero2 = () => {
   const navigate = useNavigate();

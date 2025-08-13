@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 import { Award, PenLine, Brush, Globe } from 'lucide-react'; 
 import { ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import trademarkImg from '../../assets/trademark_img.jpg';
-import copyrightImg from '../../assets/copyright_img.jpg';
-import industrialImg from '../../assets/industrial_img.png';
-import geoImg from '../../assets/geographical_img_dark.png';
+import trademarkImg from '../../assets/trademark_img.svg';
+import copyrightImg from '../../assets/copyright_img.svg';
+import industrialImg from '../../assets/industrial_img.svg';
+import geoImg from '../../assets/geographical_img_dark.svg';
 
 const Hero3 = () => {
   const navigate = useNavigate();

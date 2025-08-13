@@ -4,7 +4,7 @@ import { FaArrowDown } from "react-icons/fa6"
 import { ArrowUpRight } from 'lucide-react';
 import { slideUp } from "../../utility/animation";
 import { useNavigate } from "react-router-dom";
-import ladyJustice from '../../assets/lady_justice.png';
+import ladyJustice from '../../assets/lady_justice.svg';
 
 const Hero1 = () => {
   const navigate = useNavigate();

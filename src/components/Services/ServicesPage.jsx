@@ -1,15 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import trademark from '../../assets/trademark_img.jpg'
-import industrial from '../../assets/industrial_img.png'
-import copyright from '../../assets/copyright_img.jpg'
-import geo_img from '../../assets/geographical_img.png'
+import trademark from '../../assets/trademark_img.svg'
+import industrial from '../../assets/industrial_img.svg'
+import copyright from '../../assets/copyright_img.svg'
+import geo_img from '../../assets/geographical_img.svg'
 import { useNavigate } from 'react-router-dom';
-import legalProtection from '../../assets/legal_protection.png';
-import designInnovation from '../../assets/design_innovation.png';
-import ipSecurity from '../../assets/ip_security.png';
-import heritageImg from '../../assets/heritage_img.png';
+import legalProtection from '../../assets/legal_protection.svg';
+import designInnovation from '../../assets/design_innovation.svg';
+import ipSecurity from '../../assets/ip_security.svg';
+import heritageImg from '../../assets/heritage_img.svg';
 
 const ServicesPage = () => {
   const navigate = useNavigate();

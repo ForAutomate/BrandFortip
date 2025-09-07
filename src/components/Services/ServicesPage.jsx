@@ -16,35 +16,31 @@ const ServicesPage = () => {
   const services = [
     {
       id: 1,
-      title: "Trademark Protection",
+      title: "Trademarks",
       tagline: "Your brand is your identity. Let's protect it.",
-      description: "We secure and defend your brand identity, ensuring your business name, logo, and slogans are protected from infringement. Our services include comprehensive clearance searches, registration, portfolio management, and aggressive enforcement against unauthorized use to maintain your market distinction.",
+      description: "Your brand is more than just a name or a logo; it is the identity your customers trust and the reputation you have worked hard to build. A trademark is what makes your business stand out from the competition, and it deserves the strongest protection. By registering your trademark, you secure the exclusive or sole right to use it and stop others from copying or misusing it. This means no one else can ride on the reputation, goodwill, and trust your brand has earned. We strongly recommend protecting your brand, products, and services through trademark registration, ensuring that what's yours remains truly yours. We, BRANDFORT IP make trademark registration simple and stress-free. Our experienced lawyers are here to guide you every step of the way from filing and registration to maintenance and renewals. We will walk you through the process in clear, practical terms so you understand your options and feel confident about protecting your brand.",
       image: trademark,
       imagePosition: 'right', 
       offerings: [
         {
-          heading: 'Trademark Clearance Searches',
-          text: 'Perform thorough searches to ensure your desired trademark is available and does not infringe on existing marks.'
+          heading: 'Trademark Search/ Clearance Search',
+          text: 'Before you file a trademark or launch your brand in the market, it is wise to begin with a trademark search. This important step helps identify any existing or pending marks already recorded with the Indian Trademark Registry and giving you a clearer picture of where your brand stands. Our team of lawyers is skilled at carrying out thorough trademark searches and will provide you with a detailed search report. Along with the report, we will give you practical legal advice on your chances of success and the best way forward to protect your brand.'
         },
         {
-          heading: 'Trademark Filing & Registration',
-          text: 'Prepare and file trademark applications with the appropriate authorities, guiding you through the registration process.'
+          heading: 'Preparation and Filing Trademark Application',
+          text: 'Our lawyers ensure your trademark application is drafted with precision to avoid unnecessary hurdles or rejection. From choosing the right category of trademark (word mark, composite mark, logo, or device mark) to making sure your brand is distinctive, we take care of every detail. We also draft accurate descriptions of your goods and services in line with the practices of Indian Trademark Office and the international Nice Classification system.'
         },
         {
-          heading: 'Opposition & Cancellation Proceedings',
-          text: 'Represent your interests in disputes over trademark registrations, defending your rights against opposition.'
+          heading: 'Responding to Office Actions/Attending show cause hearing',
+          text: "Sometimes, the Trademark Office may raise objections to your application in an Examination Report. If that happens, our lawyers are here to help. We prepare clear and well-structured responses, backed by Indian Trademark Law and relevant precedents to address the examiner's concerns. In cases where the examiner schedules a show cause hearing, we represent you directly before the Trademark Office, presenting your case effectively and addressing concerns to maximize the chances of your trademark being approved."
         },
         {
-          heading: 'Trademark Watch Services',
-          text: 'Monitor the marketplace for potential infringements and unauthorized use of your trademarks.'
+          heading: 'Trademark Opposition Procedure',
+          text: "After a trademark is published in the Trademarks Journal, third parties have the right to oppose its registration if they believe it conflicts with their existing rights. If your trademark faces opposition, our lawyers will represent you throughout the process from drafting a strong counterstatement to handling evidence and hearings before the Indian Trademark Office. On the other hand, if you need to oppose someone else's trademark that threatens your brand, we can prepare and file an opposition on your behalf. Our team ensures that your case is backed by solid legal reasoning, relevant precedents, and a clear strategy to protect your brand identity."
         },
         {
-          heading: 'Trademark Licensing & Assignments',
-          text: 'Manage the licensing and transfer of trademark rights to protect and monetize your brand assets.'
-        },
-        {
-          heading: 'Trademark Objection',
-          text: 'We handle objections from the Registrar or third parties, building a strong case to proceed with registration.'
+          heading: 'Trademark Maintenance and Renewal',
+          text: 'In India, a registered trademark is valid for 10 years from the date of filing and can be renewed indefinitely for successive 10-year periods. Our team ensures your trademark remains valid and enforceable by monitoring deadlines, handling renewal filings, and managing ongoing compliance with Indian Trademark Law. We take the hassle out of renewals, so you never have to worry about missing a deadline or losing your rights. With us, your brand stays protected year after year.'
         },
       ],
       secondaryImage: legalProtection,
@@ -192,7 +188,8 @@ const ServicesPage = () => {
               <h2 className="text-4xl md:text-5xl xl:text-6xl font-judr text-blue-900 leading-tight">
                 {service.title}
               </h2>
-              <p className="mt-2 text-lg text-[#212529] font-popr">"{service.tagline}"</p>
+              <p className="mt-2 text-lg text-blue-900 font-popsb">"{service.tagline}"</p>
+              <p className="mt-4 text-base text-[#212529] font-popr">{service.description}</p>
             </motion.div>
             <motion.div 
               initial={{ opacity: 0, scale: 0.8 }}

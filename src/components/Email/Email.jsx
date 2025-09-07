@@ -13,11 +13,9 @@ const Email = () => {
       .then(
         () => {
           console.log("SUCCESS!");
-          // alert("Message sent successfully!"); // Using alert for now, consider custom modal
         },
         (error) => {
           console.log("FAILED...", error.text);
-          // alert("Failed to send message. Please try again later."); // Using alert for now
         }
       );
   };
@@ -56,7 +54,7 @@ const Email = () => {
           </div>
           <div>
             <p className="text-sm font-sans text-sky-300 mb-1">Company Address</p>
-            <p className="text-lg font-sans text-blue-900">Plot no B-16, Saraswati enclave, sector 143  Noida (UP) Pincode:- 201306</p>
+            <p className="text-lg font-sans text-blue-900">Plot no B-16, Saraswati enclave, sector-143 Noida (UP) Pincode:- 201306</p>
           </div>
         </div>
 

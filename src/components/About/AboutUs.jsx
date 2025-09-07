@@ -1,10 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import OurTeamPage from './OurTeamPage';
-import OurValues from './OurValues';
 import aboutUs1 from '../../assets/aboutus_1.svg';
 import aboutUs2 from '../../assets/aboutus_2.svg';
-import aboutUsVid from '../../assets/aboutus_vid.mp4';
+import aboutUsVid from '../../assets/aboutus_vid.webm';
 
 const AboutUs = () => {
   const fadeIn = (direction, delay) => ({
@@ -65,55 +64,31 @@ const AboutUs = () => {
             <img
               src={aboutUs1}
               alt="Trusted Legal Partners"
-              className="w-full p-4 rounded-[50px] h-auto object-cover"
+              className="w-full p-4 rounded-[50px] h-auto object-cover pointer-events-none"
               onError={(e) => { e.target.src = 'https://placehold.co/600x400'; }}
             />
           </motion.div>
         </motion.div>
 
-        {/* Values Section */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 px-4"
-        >
+        {/* About Section */}
+        <div className="mb-16 px-4">
+          <h2 className="text-4xl md:text-6xl font-judr text-blue-900 leading-tight mb-8 text-center">
+            About Our Firm
+          </h2>
           <motion.div
+            className="max-w-3xl mx-auto"
             variants={fadeIn('down', 0.2)}
-            className="bg-white shadow-sm rounded-xl p-8 hover:border-b-2 hover:border-blue-900 border-b-2 border-[#F0F4F8] transition-colors duration-500"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
           >
-            <h3 className="text-lg font-popsb text-blue-900 mb-2 ">WORK INTEGRITY</h3>
-            <p className="text-sm text-[#1E293B] mb-4">
-              We uphold the highest ethical standards in all our legal
-              consultations and dealings to make sure you get the most solid
-              solutions.
-            </p>
+            <div className="bg-white shadow-sm rounded-xl p-8 hover:border-b-2 hover:border-blue-900 border-b-2 border-[#F0F4F8] transition-colors duration-500">
+              <p className="text-xl  text-[#1E293B] mb-4">
+                We are a boutique intellectual property law firm, based in NOIDA, INDIA focused exclusively on protecting and enforcing intellectual property rights. Our services cover the full spectrum of IP matters, including trademark filing and prosecution, opposition and cancellation actions, industrial design applications, copyright protection, and geographical indication cases.
+              </p>
+            </div>
           </motion.div>
-          <motion.div
-            variants={fadeIn('down', 0.4)}
-            className="bg-white shadow-sm rounded-xl p-8  hover:border-b-2 hover:border-blue-900 border-b-2 border-[#F0F4F8] transition-colors duration-500"
-          >
-            <h3 className="text-lg font-popsb text-blue-900 mb-2 ">CLIENT-CENTRIC SERVICE</h3>
-            <p className="text-sm text-[#1E293B] mb-4">
-              Your trusted legal partner. We're here to guide you to achieve
-              your goals in a client-centric way. We stand as more than attorneys,
-              we are a legal compass guiding you through the complexities in times
-              of legal need.
-            </p>
-          </motion.div>
-          <motion.div
-            variants={fadeIn('down', 0.6)}
-            className="bg-white shadow-sm rounded-xl p-8  hover:border-b-2 hover:border-blue-900 border-b-2 border-[#F0F4F8] transition-colors duration-500"
-          >
-            <h3 className="text-lg font-popsb text-blue-900 mb-2 ">COMMUNITY INVOLVEMENT</h3>
-            <p className="text-sm text-[#1E293B] mb-4">
-              We are a legal firm, we try our best to develop good faith in the
-              communities we serve, supporting causes that make a difference for
-              everyone.
-            </p>
-          </motion.div>
-        </motion.div>
+        </div>
 
         {/* Team/Mission Section */}
         <motion.div 
@@ -131,7 +106,7 @@ const AboutUs = () => {
             <img
               src={aboutUs2}
               alt="Our Dedicated Team"
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover pointer-events-none"
               onError={(e) => { e.target.src = 'https://placehold.co/600x400'; }}
             />
           </motion.div>
@@ -141,20 +116,46 @@ const AboutUs = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-judr text-blue-900 leading-tight mb-4">
-              Empowering You with Legal Solutions
+            <h2 className="text-4xl md:text-6xl font-judr text-blue-900 leading-tight mb-4">
+              Our Team & Expertise
             </h2>
-            <p className="text-[#1E293B] text-base mb-6">
-              Our dedicated team is here to guide you through every step of the way
-              within your legal complexities. We stand as more than attorneys; we
-              are a legal compass guiding you through the complexities in times of
-              legal need.
+            <p className="text-[#1E293B] text-xl mb-6">
+              Our team is composed of dedicated lawyers and IP professionals with extensive expertise in intellectual property law. We work hand in hand with the Intellectual Property Office to ensure your rights are safeguarded at every stage.
             </p>
             <p className="text-blue-900 italic text-right font-judi">
               - BrandFort Ip
             </p>
           </motion.div>
         </motion.div>
+
+                {/* Our Mission Section */}
+        <motion.div
+          variants={fadeIn('up', 0.2)}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="mb-32 px-4 text-center"
+        >
+           <h2 className="text-4xl md:text-6xl font-judr text-blue-900 leading-tight mb-4">Our Mission</h2>
+           <p className="text-xl text-[#1E293B] max-w-4xl mx-auto">
+             We believe every idea has value and deserves strong protection. For many innovators, the process of securing IP rights can feel overwhelming and that's where we step in. Our mission is to make the process clear, efficient, and tailored to your needs, while keeping costs practical and transparent.
+           </p>
+        </motion.div>
+
+        {/* Our Client-Centric Approach Section */}
+        <motion.div
+          variants={fadeIn('up', 0.2)}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="mb-16 px-4 text-center"
+        >
+           <h2 className="text-4xl md:text-6xl font-judr text-blue-900 leading-tight mb-4">Our Client-Centric Approach</h2>
+           <p className="text-xl text-[#1E293B] max-w-4xl mx-auto">
+             While most firms highlight their technical expertise, what truly sets us apart is the way we engage with our clients. We see every matter as personal, treating your concerns as if they were our own. This genuine sense of ownership and partnership drives us to deliver the highest level of service and makes us proud of the work we do.
+           </p>
+        </motion.div>
+
 
         {/* video with Text Section */}
         <motion.div
@@ -164,13 +165,12 @@ const AboutUs = () => {
           className="grid grid-cols-1 mb-16 p-2"
         >
           <div className="xl:rounded-[50px] rounded-3xl overflow-hidden shadow-xl">
-            <video src={aboutUsVid} autoPlay loop muted className="w-full h-auto object-cover"></video>
+            <video src={aboutUsVid} autoPlay loop muted className="w-full h-auto object-cover pointer-events-none"></video>
           </div>
         </motion.div>
       </div>
 
       <OurTeamPage />
-      <OurValues/>
     </>
   );
 };

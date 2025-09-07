@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <h3 className="text-5xl font-judr font-medium text-[#003366] mb-4">
-              BrandFort Ip.
+              BrandFort Ip
             </h3>
             <p className="text-[#003366] mb-2">(+123) 456-7890</p>
             <p className="text-[#003366] mb-2">
@@ -18,7 +18,7 @@ const Footer = () => {
               </a>
             </p>
             <p className="text-[#003366]">
-              Plot no B-16, Saraswati enclave, sector 143  Noida (UP) Pincode:- 201306
+              Plot no B-16, Saraswati enclave, sector-143 Noida (UP) Pincode:- 201306
             </p>
           </div>
 

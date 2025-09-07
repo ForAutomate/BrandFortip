@@ -9,31 +9,26 @@ const OurTeamPage = () => {
     {
       name: 'Sangeeta Kumari',
       title: 'Owner',
-      expertise: 'Strategic Legal Planning, Business Law',
       image: femaleTeam,
     },
     {
-      name: 'Dhruv',
+      name: 'Dhruv Kumar',
       title: 'Assistant Manager',
-      expertise: 'Real Estate Law, Corporate Governance',
       image: maleTeam,
     },
     {
-      name: 'Komal',
+      name: 'Komal Shekhawat',
       title: 'Team Leader',
-      expertise: 'Family Law, Mediation, Family Disputes',
       image: femaleTeam,
     },
     {
-      name: 'Lucky',
+      name: 'Lucky Singh',
       title: 'Senior Associate',
-      expertise: 'Litigation, Intellectual Property',
       image: maleTeam,
     },
     {
       name: 'Sanjana Sharma',
       title: 'Associate',
-      expertise: 'Environmental Law, Public Policy',
       image: femaleTeam,
     },
   ];
@@ -112,15 +107,14 @@ const OurTeamPage = () => {
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-full h-[500px] object-cover"
+                className="w-full bg-white h-[380px] pointer-events-none"
                 onError={(e) => { e.target.src = `https://placehold.co/400x500/e5e7eb/6b7280?text=${member.name.replace(' ', '+')}`; }}
               />
             </div>
             <div className="text-start">
-              <h3 className="text-4xl md:text-3xl xl:text-5xl font-judr text-blue-900 mb-1">{member.name}</h3>
+              <h3 className="text-2xl md:text-xl xl:text-3xl font-judr text-blue-900 mb-1">{member.name}</h3>
               <div className='w-full border-[1.6px] border-sky-300 my-4'></div>
-              <p className="text-xl font-popr text-sky-300 mb-2">{member.title}</p>
-              <p className="text-md font-popr text-gray-500">{member.expertise}</p>
+              <p className="text-md font-popr text-sky-300 mb-2">{member.title}</p>
             </div>
           </motion.div>
         ))}

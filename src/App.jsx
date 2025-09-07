@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer2";
-import CustomCursor from "./components/CustomCursor/CustomCursor";
+
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -10,7 +10,7 @@ import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
 import ScrollToTop from "./components/ScrollToTop";
-import loaderVideo from './assets/loader.mp4';
+import loaderVideo from './assets/loader.webm';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -35,7 +35,7 @@ const App = () => {
     <Router>
       <ScrollToTop />
       <main className="overflow-x-hidden font-popr bg-[#F0F4F8]">
-        <CustomCursor />
+        
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

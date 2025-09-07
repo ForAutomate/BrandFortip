@@ -36,7 +36,7 @@ const Navbar = () => {
       {/* Logo and Brand Name */} 
       <div className="flex-shrink-0">
         <Link to="/" className="text-2xl font-popr text-blue-900">
-          <span className="font-judi">BrandFort Ip</span>.
+          <span className="font-judi">BrandFort Ip</span>
         </Link>
       </div>
 

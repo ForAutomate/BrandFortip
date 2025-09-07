@@ -9,7 +9,7 @@ const Email = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, "YOUR_PUBLIC_KEY")
+      .sendForm("service_jcembna", "template_aqs042h", form.current, "DP5jj7SU7szyVOJ06")
       .then(
         () => {
           console.log("SUCCESS!");

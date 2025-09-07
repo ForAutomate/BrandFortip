@@ -1,9 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 
 const Email = () => {
   const form = useRef();
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [showErrorMessage, setShowErrorMessage] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -13,9 +15,14 @@ const Email = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          setShowSuccessMessage(true);
+          setShowErrorMessage(false);
+          form.current.reset(); // Clear the form
         },
         (error) => {
           console.log("FAILED...", error.text);
+          setShowErrorMessage(true);
+          setShowSuccessMessage(false);
         }
       );
   };
@@ -82,6 +89,16 @@ const Email = () => {
             Send Message
           </motion.button>
         </form>
+        {showSuccessMessage && (
+          <div className="mt-4 p-4 bg-green-100 text-green-800 rounded-md">
+            Email sent successfully!
+          </div>
+        )}
+        {showErrorMessage && (
+          <div className="mt-4 p-4 bg-red-100 text-red-800 rounded-md">
+            Failed to send email. Please try again later.
+          </div>
+        )}
       </motion.div>
     </div>
   );

@@ -146,7 +146,7 @@ const ServicesPage = () => {
 
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
   };
 
   return (
@@ -172,7 +172,7 @@ const ServicesPage = () => {
         <motion.div
           key={service.id}
           variants={sectionVariants}
-          initial="hidden"
+          
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           className={`py-12 md:py-16 border-t border-blue-200 ${index === services.length - 1 ? 'border-b' : ''}`}

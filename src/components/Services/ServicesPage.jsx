@@ -180,7 +180,7 @@ const ServicesPage = () => {
           {/* Main Hero Section for each service */}
           <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12 ${service.imagePosition === 'left' ? 'md:grid-flow-col' : ''}`}>
             <motion.div 
-              initial={{ opacity: 0, x: service.imagePosition === 'left' ? -100 : 100 }}
+              initial={{ opacity: 1, x: 0 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
               className={`${service.imagePosition === 'left' ? 'md:col-start-2' : ''}`}>

@@ -224,7 +224,7 @@ const Hero2 = () => {
           </div>
         </div>
       </div>
-      <style jsx>{`
+      <style>{`
         .mask-gradient {
           mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
         }

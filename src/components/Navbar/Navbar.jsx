@@ -71,11 +71,11 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="absolute top-16 left-0 right-0 z-50 md:hidden flex flex-col p-6 space-y-4 bg-white border-t border-gray-200 shadow-md">
-          <NavLink to="/" mobile setIsOpen={setIsOpen}>Home</NavLink>
-          <NavLink to="/about" mobile setIsOpen={setIsOpen}>About</NavLink>
-          <NavLink to="/services" mobile setIsOpen={setIsOpen}>Services</NavLink>
-          <NavLink to="/privacy-policy" mobile setIsOpen={setIsOpen}>Privacy Policy</NavLink>
-          <Link to="/contact" onClick={() => setIsOpen(false)}>
+          <NavLink to="/" mobile>Home</NavLink>
+          <NavLink to="/about" mobile>About</NavLink>
+          <NavLink to="/services" mobile>Services</NavLink>
+          <NavLink to="/privacy-policy" mobile>Privacy Policy</NavLink>
+          <Link to="/contact">
             <button className="flex items-center justify-center w-full px-4 py-3 text-lg font-medium text-[#003366] border-2 border-[#003366] rounded-full transition-all duration-300 hover:bg-[#003366] hover:text-white shadow-md mt-4">
               <span>Contact Us</span>
               <ArrowUpRight size={20} className="ml-2" />
@@ -90,7 +90,6 @@ const Navbar = () => {
 const NavLink = ({ children, mobile, to, setIsOpen }) => (
   <Link
     to={to}
-    onClick={() => setIsOpen(false)}
     className={`
       ${mobile ? 'text-lg font-medium w-full text-center' : 'hover:text-sky-300'}
       text-[#003366] transition-colors duration-300 relative

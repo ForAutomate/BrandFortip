@@ -132,7 +132,6 @@ const Hero2 = () => {
                 src={heroLawyer}
                 alt="Professional Lawyer"
                 className="w-full rounded-2xl shadow-2xl mask-gradient"
-                loading="lazy"
               />
               </div>
               

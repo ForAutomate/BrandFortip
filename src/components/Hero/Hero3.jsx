@@ -84,7 +84,7 @@ const Hero3 = () => {
         <motion.button 
         onClick={() => navigate("/services")}
         variants={cardVariants}
-        className="xl:px-10 px-4 xl:py-4 py-2 md:px-6 md:py-4 border-[2px] border-blue-900 rounded-full xl:text-md text-sm font-popr text-blue-900 hover:text-white hover:bg-blue-900 xl:mt-32 mt-10 duration-300 transition-colors ">
+        className="xl:px-10 px-4 xl:py-4 py-2 md:px-6 md:py-4 border-[2px] border-blue-900 rounded-full xl:text-md text-xs font-popr text-blue-900 hover:text-white hover:bg-blue-900 xl:mt-32 mt-10 duration-300 transition-colors ">
           Read More About Our Practice Areas
         </motion.button>
       </motion.div>
@@ -103,7 +103,7 @@ const Hero3 = () => {
             <motion.div
               key={area.id}
               variants={cardVariants}
-              className="group relative h-96 md:h-80 xl:h-96 hover:rounded-se-[190px] overflow-hidden cursor-pointer transition-all duration-300"
+              className="group relative h-96 md:h-80 xl:h-96 xl:hover:rounded-se-[190px] hover:rounded-se-[60px] overflow-hidden cursor-pointer transition-all duration-300"
               style={{
                 backgroundImage: `url(${area.bgImage})`,
                 backgroundSize: 'cover',
@@ -122,7 +122,7 @@ const Hero3 = () => {
                       <IconComponent size={28} className="text-blue-900"/>
                     </div>
                   </div>
-                  <h3 className="text-xl md:text-3xl xl:text-5xl font-judr mb-2">
+                  <h3 className="text-lg md:text-3xl xl:text-5xl font-judr mb-2 break-words">
                     {area.coverTitle}
                   </h3>
                   <p className="text-sm xl:text-lg font-popr text-[#212529]">

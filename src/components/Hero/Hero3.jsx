@@ -103,7 +103,7 @@ const Hero3 = () => {
             <motion.div
               key={area.id}
               variants={cardVariants}
-              className="group relative h-64 md:h-72 xl:h-96 hover:rounded-se-[190px] overflow-hidden cursor-pointer transition-all duration-300"
+              className="group relative h-96 md:h-80 xl:h-96 hover:rounded-se-[190px] overflow-hidden cursor-pointer transition-all duration-300"
               style={{
                 backgroundImage: `url(${area.bgImage})`,
                 backgroundSize: 'cover',
@@ -140,7 +140,7 @@ const Hero3 = () => {
                 </div>
                 
                 <div>
-                  <p className="text-white text-sm md:text-base leading-relaxed mb-4">
+                  <p className="text-white text-xs md:text-base leading-relaxed mb-4">
                     {area.description}
                   </p>
                 </div>  

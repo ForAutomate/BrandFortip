@@ -84,7 +84,7 @@ const Hero3 = () => {
         <motion.button 
         onClick={() => navigate("/services")}
         variants={cardVariants}
-        className="xl:px-10 px-4 xl:py-4 py-2 md:px-6 md:py-4 border-[2px] border-blue-900 rounded-full xl:text-md text-xs font-popr text-blue-900 hover:text-white hover:bg-blue-900 xl:mt-32 mt-10 duration-300 transition-colors ">
+        className="xl:px-10 px-4 xl:py-4 py-2 md:px-6 md:py-4 border-[2px] border-blue-900 rounded-full xl:text-md text-xs font-popr text-blue-900 hover:text-white hover:bg-blue-900 xl:mt-32 mt-10 duration-300 transition-colors">
           Read More About Our Practice Areas
         </motion.button>
       </motion.div>

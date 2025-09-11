@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import main_logo from '../../assets/main_logo.svg';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,11 +34,11 @@ const Navbar = () => {
   }, [lastScrollY]);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 px-6 md:px-12 bg-[#F0F4F8] shadow-sm border-b border-gray-100 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 bg-[#F0F4F8] shadow-sm border-b border-gray-100 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
       {/* Logo and Brand Name */} 
       <div className="flex-shrink-0">
         <Link to="/" className="text-2xl font-popr text-blue-900">
-          <span className="font-judi">BrandFort Ip</span>
+          <img src={main_logo} alt="BrandFort IP Logo" className="h-20" />
         </Link>
       </div>
 

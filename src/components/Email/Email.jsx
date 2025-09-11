@@ -11,7 +11,12 @@ const Email = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_jcembna", "template_aqs042h", form.current, "DP5jj7SU7szyVOJ06")
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_USER_ID
+      )
       .then(
         () => {
           console.log("SUCCESS!");

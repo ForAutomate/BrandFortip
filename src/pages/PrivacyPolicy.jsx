@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
       <motion.div
         className="container mx-auto px-6 max-w-6xl"
         variants={containerVariants}
-        initial="hidden"
+        initial="visible"
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
       >

@@ -33,11 +33,13 @@ const Navbar = () => {
     }
   }, [lastScrollY]);
 
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 bg-[#F0F4F8] shadow-sm border-b border-gray-100 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
       {/* Logo and Brand Name */} 
       <div className="flex-shrink-0">
-        <Link to="/" className="text-2xl font-popr text-blue-900">
+        <Link to="/" onClick={closeMenu} className="text-2xl font-popr text-blue-900">
           <img src={main_logo} alt="BrandFort IP Logo" className="h-20" />
         </Link>
       </div>
@@ -73,11 +75,11 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="absolute top-16 left-0 right-0 z-50 md:hidden flex flex-col p-6 space-y-4 bg-white border-t border-gray-200 shadow-md">
-          <NavLink to="/" mobile>Home</NavLink>
-          <NavLink to="/about" mobile>About</NavLink>
-          <NavLink to="/services" mobile>Services</NavLink>
-          <NavLink to="/privacy-policy" mobile>Privacy Policy</NavLink>
-          <Link to="/contact">
+          <NavLink to="/" mobile onClick={closeMenu}>Home</NavLink>
+          <NavLink to="/about" mobile onClick={closeMenu}>About</NavLink>
+          <NavLink to="/services" mobile onClick={closeMenu}>Services</NavLink>
+          <NavLink to="/privacy-policy" mobile onClick={closeMenu}>Privacy Policy</NavLink>
+          <Link to="/contact" onClick={closeMenu}>
             <button className="flex items-center justify-center w-full px-4 py-3 text-lg font-medium text-[#003366] border-2 border-[#003366] rounded-full transition-all duration-300 hover:bg-[#003366] hover:text-white shadow-md mt-4">
               <span>Contact Us</span>
               <ArrowUpRight size={20} className="ml-2" />
@@ -89,9 +91,10 @@ const Navbar = () => {
   );
 };
 
-const NavLink = ({ children, mobile, to, setIsOpen }) => (
+const NavLink = ({ children, mobile, to, onClick }) => (
   <Link
     to={to}
+    onClick={onClick}
     className={`
       ${mobile ? 'text-lg font-medium w-full text-center' : 'hover:text-sky-300'}
       text-[#003366] transition-colors duration-300 relative

@@ -61,10 +61,6 @@ const Email = () => {
             <p className="text-lg font-sans text-blue-900">info@brandfortip.com</p>
           </div>
           <div>
-            <p className="text-sm font-sans text-sky-300 mb-1">Phone Number</p>
-            <p className="text-lg font-sans text-blue-900">(+123) 456 - 7890</p>
-          </div>
-          <div>
             <p className="text-sm font-sans text-sky-300 mb-1">Company Address</p>
             <p className="text-lg font-sans text-blue-900">Plot no B-16, Saraswati enclave, sector-143 Noida (UP) Pincode:- 201306</p>
           </div>

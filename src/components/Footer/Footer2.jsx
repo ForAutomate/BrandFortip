@@ -11,7 +11,6 @@ const Footer = () => {
             <h3 className="text-5xl font-judr font-medium text-[#003366] mb-4">
               BrandFort Ip
             </h3>
-            <p className="text-[#003366] mb-2">(+123) 456-7890</p>
             <p className="text-[#003366] mb-2">
               <a href="mailto:information@legalite.com" className="hover:text-white transition-colors duration-200">
                 info@brandfortip.com
